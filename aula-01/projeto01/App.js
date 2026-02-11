@@ -4,7 +4,7 @@ import OlaMundo from './components/OlaMundo';
 export default function App() {
   return (
       <View style={styles.container}>
-        <OlaMundo/>
+        <OlaMundo nome = 'Lauane Gonzaga e Silva'/>
       </View>
   );
 }

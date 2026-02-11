@@ -1,10 +1,10 @@
-import React from "react";
+import {View, Text} from 'react-native';
 
-export default function OlaMundo(){
+export default function OlaMundo(props){
     return(
         <View>
-        <Text>Ola</Text>
-        <Text>mundo</Text>
+        <Text>Olá</Text>
+        <Text >{props.nome}!</Text>
         </View>
     );
 }
