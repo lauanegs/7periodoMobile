@@ -3,10 +3,11 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import ModalTabsNavigator from './ModalTabsNavigator';
 import ScrollTabsNavigator from './ScrollTabsNavigator';
 import HomeScreen from '../screens/HomeScreen';
+import CameraScreen from '../screens/camera/CameraScreen';
  
 const Drawer = createDrawerNavigator(); 
  
-function AbasScreen() { 
+function ModaisScreen() { 
     return <ModalTabsNavigator/>;
 }
 
@@ -19,8 +20,9 @@ export default function AppNavigator() {
         <NavigationContainer> 
             <Drawer.Navigator> 
                 <Drawer.Screen name="Home" component={HomeScreen} /> 
-                <Drawer.Screen name="Navegação por abas" component={AbasScreen} /> 
+                <Drawer.Screen name="Modais" component={ModaisScreen} /> 
                 <Drawer.Screen name="Scroll" component={ScrollScreen} />
+                <Drawer.Screen name="Camera" component={CameraScreen} />
             </Drawer.Navigator> 
         </NavigationContainer> 
     ); 
